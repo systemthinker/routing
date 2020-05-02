@@ -19,6 +19,7 @@ export default function Navbar(){
         <NavLink activeStyle={divStyle} exact to="/">Home</NavLink>
         <NavLink activeStyle={divStyle} exact to="/discover">movies</NavLink>
         <NavLink activeStyle={divStyle} exact to="/about">about</NavLink>
+        <NavLink activeStyle={divStyle} exact to="/discover/test">movieDetail</NavLink>
     </div>
     )
 }

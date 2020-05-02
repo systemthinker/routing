@@ -10,6 +10,7 @@ import {
 import DiscoverMoviesPage from './pages/DiscoverMoviesPage'
 import AboutPage from './pages/AboutPage'
 import HomePage from './pages/HomePage'
+import MoviePage from './pages/MoviePage'
 import Navbar from './components/Navbar'
 
 export default function App() {
@@ -19,9 +20,10 @@ export default function App() {
     <Navbar />
     <Switch>
     
-      <Route path="/discover" component={DiscoverMoviesPage} />
-      <Route path="/about" component={AboutPage} />
-      <Route path="/" component={HomePage} />
+      <Route exact path="/discover" component={DiscoverMoviesPage} />
+      <Route exact path="/about" component={AboutPage} />
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/discover/test" component={MoviePage} />
     
   </Switch>
   
