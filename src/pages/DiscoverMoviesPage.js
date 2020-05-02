@@ -53,12 +53,20 @@ export default function DiscoverMoviesPage() {
          {searching}
       </p>
 
-      <ul>
-          {data.map((poster)=> {
-              return (<img src={poster.Poster}></img>)
+      
+          {data.map((movie)=>{
+              return (
+            <div>  
+              <p>{"Title: "}{movie.Title}</p>  
+              <img src={movie.Poster}></img>
+              
+            </div> 
+              )     
           })}
+        
+ 
           
-      </ul>
+      
     </div>
   );
 }
