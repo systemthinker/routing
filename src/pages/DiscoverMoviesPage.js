@@ -57,8 +57,10 @@ export default function DiscoverMoviesPage() {
           {data.map((movie)=>{
               return (
             <div>  
-              <p>{"Title: "}{movie.Title}</p>  
+              <p>{"Title: "}{movie.Title}</p> 
+              <a href={movie.Title}>Go to free download</a> 
               <img src={movie.Poster}></img>
+              <p>Year {movie.Year}</p>
               
             </div> 
               )     
